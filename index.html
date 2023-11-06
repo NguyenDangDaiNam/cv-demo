@@ -1,119 +1,156 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>CV Template</title>
-  <link rel="stylesheet" href="cv.css">
-
-</head>
-
-  <body>
-    <div class="resume">
-    <div class="base">
-      <div class="profile">
-        <div class="photo"><img src="https://f11-zpcloud.zdn.vn/7952535695120342572/80d53fb78135566b0f24.jpg"></div>
-        <div class="info">
-          <h4 class="name">Nguyen Dang Dai Nam</h4><small class="job">Student</small>
-        </div>
-      </div>
-      <div class="about">
-        <h3>Nơi học tập</h3>Trường Đại học Sư phạm Thành phố Hồ Chí Minh<br/>
-      </div>
-      <div class="contact">
-        <h3>Liên hệ</h3>
-        ...
-      </div>
-      <div class="follow">
-        <h3></h3>
-        <div class="box"><a href="javascript:void(0);"><i class="fa fa-facebook"></i></a><a href="https://www.plurk.com/natsukawa" target="_blank"><i class="pif-plurkapp"></i></a><a href="javascript:void(0);"><i class="fa fa-twitter"></i></a><a href="javascript:void(0);"><i class="fa fa-pinterest-p"></i></a><a href="javascript:void(0);"><i class="fa fa-tumblr"></i></a><a href="https://codepen.io/xichen/" target="_blank"><i class="fa fa-codepen"></i></a></div>
-      </div>
-    </div>
-    <div class="func">
-      <div class="work">
-        <h3><i class="fa fa-briefcase"></i>Kinh nghiệm</h3>
-        <ul>
-          <li><span>#unknown</span><small>Từ #unknown</small></li>
-          <li><span>#unknown</span><small>Từ #unknown </small></li>
-          <li><span>#unknown</span><small>Từ #unknown</small></li>
-        </ul>
-      </div>
-      <div class="edu">
-        <h3><i class="fa fa-graduation-cap"></i>#####</h3>
-        <ul>
-          <li><span>#####</span><small>#####</small></li>
-          <li><span>#####</span><small>#####</small></li>
-          <li><span>#####</span><small>#####</small></li>  
-        </ul>
-      </div>
-      <div class="skills-prog">
-        <h3><i class="fa fa-code"></i>Kỹ năng lập trình</h3>
-        <ul>
-          <li data-percent="96"><span>HTML</span>
-            <div class="progress">
-               <progress id="avancement" class="progressBar" value="70" max="100"></progress>
-            </div>
-          </li>
-          <li data-percent="96"><span>CSS</span>
-            <div class="progress">
-               <progress id="avancement" class="progressBar" value="60" max="100"></progress>
-            </div>
-          </li>
-          <li data-percent="96"><span>Bootstrap</span>
-            <div class="progress">
-               <progress id="avancement" class="progressBar" value="0" max="100"></progress>
-            </div>
-          </li>
-          <li data-percent="96"><span>JavaScript</span>
-            <div class="progress">
-               <progress id="avancement" class="progressBar" value="0" max="100"></progress>
-            </div>
-          </li>
-          <li data-percent="96"><span>PHP</span>
-            <div class="progress">
-               <progress id="avancement" class="progressBar" value="0" max="100"></progress>
-            </div>
-          </li>
-          <li data-percent="96"><span>Git</span>
-            <div class="progress">
-               <progress id="avancement" class="progressBar" value="0" max="100"></progress>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="skills-soft">
-        <h3><i class="fa fa-th-list"></i>Những khả năng khác</h3>
-        <ul>
-          <li data-percent="94">
-            <svg viewbox="0 0 100 100">
-              <circle cx="50" cy="50" r="45"></circle>
-              <circle class="cbar" cx="50" cy="50" r="45"></circle>
-            </svg><span>#####</span><small></small>
-          </li>
-          <li data-percent="80">
-            <svg viewbox="0 0 100 100">
-              <circle cx="50" cy="50" r="45"></circle>
-              <circle class="cbar" cx="50" cy="50" r="45"></circle>
-            </svg><span>#####</span><small></small>
-          </li>
-          <li data-percent="89">
-            <svg viewbox="0 0 100 100">
-              <circle cx="50" cy="50" r="45"></circle>
-              <circle class="cbar" cx="50" cy="50" r="45"></circle>
-            </svg><span>#####</span><small></small>
-          </li>
-          <li data-percent="55">
-            <svg viewbox="0 0 100 100">
-              <circle cx="50" cy="50" r="45"></circle>
-              <circle class="cbar" cx="50" cy="50" r="45"></circle>
-            </svg><span>#####</span><small></small>
-          </li>
-        </ul>
-      </div>
-      <div class="interests">
-        <h3><i class="fa fa-star"></i>Sở thích</h3>
-       <p>.................................................................................................................................................</p>
-      </div>
-    </div>
-  </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CV - Nguyễn Đặng Đại Nam</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <link rel="shortcut icon" type="image/png" href="Pictures/favicon.png">
+    </head>
+    <body>
+        <div class="container">
+           <div class="avatar">
+            <img src="Pictures/1c3c41a54e8b9ad5c39a.jpg" alt="">
+           </div>
+           <div class="name">
+                <h1>Nguyen Dang Dai Nam</h1>
+                <div class="specialize">Front-End Developer</div>
+                <ul class="contact">
+                    <li>
+                        <span>P</span> +84 357587095
+                    </li>
+                    <li>
+                        <span>E</span> vip.nam.vip159@gmail.com
+                    </li>
+                    <li>
+                        <span>W</span> 
+                    </li>
+                </ul>
+           </div>
+           <div class="info">
+                <ul>
+                    <li>From <b>Ho Chi Minh City</b> - <b>VietNam</b></li>
+                    <!-- <li>25/05/2005</li> -->
+                    <br>
+                    <li><b>Ho Chi Minh City University of Education</b></li>
+                </ul>
+           </div>
+           <div class="intro">
+            <h2>INTRODUCE MYSELF</h2>
+            Mình là Nguyễn Đặng Đại Nam, hiện tại mình đang sinh sống và học tập tại Thành phố Hồ Chí Minh. Trường Đại học hiện tại mình đang học: <br><a style="text-decoration: none; color: black;" href="https://www.facebook.com/HCMUE.VN"><b>Trường Đại học Sư phạm Thành phố Hồ Chí Minh</b></a>.
+           </div>
+           <div class="experience">
+            <h2>EXPERIENCE</h2>
     
-  </body>
-  </html>
+            <div class="item">
+                <h4>Front-end Developer</h4>
+                <div class="time">
+                   <!-- <span>2022 - 2023</span>
+                   <span>HCMUE</span> -->
+                </div>
+                <div class="des">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque.
+                </div>
+            </div>
+    
+                <div class="item">
+                    <h4>Student</h4>
+                    <div class="time">
+                       <!-- <span>2023 - 20xx</span> -->
+                       <span>Ho Chi Minh University of Education</span>
+                    </div>
+                    <div class="des">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium officia nobis quas excepturi consectetur quidem quia est neque doloremque.
+                    </div>
+                </div>
+                <h2 class="skills">
+                    SKILLS
+                </h2>
+                <ul>
+                    <li>C++</li>
+                    <li>Python</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Jquery</li>
+                    <li>Bootstrap</li>
+                    <!-- <li>PHP</li> -->
+                    <!-- <li>MySql</li> -->
+                    <li>Git</li>
+                    <!-- <li>Laravel</li> -->
+                </ul>
+    
+           </div>
+           <div class="project">
+            <h2>PROJECTS</h2>
+            <div class="item">
+                <h4>CV</h4>
+                <div class="time">
+                    2023
+                </div>
+                <div class="web">
+                    <a style="text-decoration: none; color: #0c7373;;"  href="https://nguyendangdainam.github.io/Repo_CaNhan/">nddn.cv</a>
+                </div>
+                <div class="location">
+                    Front-end Developer
+                </div>
+                <div class="des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur amet sed, est eum facilis repellendus 
+                    atque perspiciatis iste porro nobis autem explicabo expedita fugiat nostrum. Eveniet eum autem culpa!
+                    <ul>
+                        <li>Lorem ipsum dolordolores.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, dolores.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur dolores.</li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="item">
+                <h4>CV</h4>
+                <div class="time">
+                    2023
+                </div>
+                <div class="web">
+                    <a style="text-decoration: none; color: #0c7373;;"  href="https://nguyendangdainam.github.io/Repo_CaNhan/">nddn.cv</a>
+                </div>
+                <div class="location">
+                    Front-end Developer
+                </div>
+                <div class="des">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur amet sed, est eum facilis repellendus 
+                    atque perspiciatis iste porro nobis autem explicabo expedita fugiat nostrum. Eveniet eum autem culpa!
+                    <ul>
+                        <li>Lorem ipsum dolordolores.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, dolores.</li>
+                        <li>Lorem ipsum dolor sit amet consectetur dolores.</li>
+                    </ul>
+                </div>
+    
+                <div class="item">
+                    <h4>CV</h4>
+                    <div class="time">
+                        2023
+                    </div>
+                    <div class="web">
+                        <a style="text-decoration: none; color: #0c7373;;"  href="https://nguyendangdainam.github.io/Repo_CaNhan/">nddn.cv</a>
+                    </div>
+                    <div class="location">
+                        Front-end Developer
+                    </div>
+                    <div class="des">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consequatur amet sed, est eum facilis repellendus 
+                        atque perspiciatis iste porro nobis autem explicabo expedita fugiat nostrum. Eveniet eum autem culpa!
+                        <ul>
+                            <li>Lorem ipsum dolordolores.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur, dolores.</li>
+                            <li>Lorem ipsum dolor sit amet consectetur dolores.</li>
+                        </ul>
+                    </div>
+           </div>
+        </div>
+        
+    </body>
+    </html>
+
