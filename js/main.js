@@ -45,7 +45,7 @@
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,
-        smartSpeed: 1500,
+        smartSpeed: 1250,
         margin: 30,
         dots: true,
         loop: true,
@@ -68,3 +68,21 @@
     
 })(jQuery);
 
+
+let container = document.getElementById('container');
+let count = 200;
+for(var i=0; i<200; i++){
+    let leftSnow = Math.floor(Math.random() * container.clientWidth * 4);
+    let topSnow = Math.floor(Math.random() * container.clientHeight);
+    let withSnow = Math.floor(Math.random() * 50);
+    let timeSnow = Math.floor((Math.random() * 5) + 5);
+    let blurSnow = Math.floor(Math.random() * 20);
+    let div = document.createElement('div');
+    div.classList.add('snow');
+    div.style.left = leftSnow + 'px';
+    div.style.top = topSnow + 'px';
+    div.style.with = withSnow + 'px';
+    div.style.animationDuration = timeSnow + 's';
+    div.style.filter = "blur(" + blurSnow + "px)";
+    container.appendChild(div);
+}
